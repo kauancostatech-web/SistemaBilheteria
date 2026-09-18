@@ -7,9 +7,11 @@ Projeto individual desenvolvido para a disciplina de Estruturas de Dados. A idei
 * **Validação de Entrada:** Verifica se o ingresso existe na catraca, autorizando e alterando o status para "UTILIZADO" caso esteja ativo, ou bloqueando se já foi usado ou cancelado.
 * **Cancelamento:** Permite cancelar bilhetes ativos e solicitar reembolso, garantindo que ingressos já utilizados ou já cancelados não possam ser cancelados novamente.
 
-## Diagrama do Sistema
-Abaixo está o diagrama de classes que representa a estrutura e o relacionamento entre os componentes da aplicação:
+---
 
+## 📊 Diagrama do Sistema
+
+### 1. Diagrama de Classes
 ```mermaid
 classDiagram
     class ConsultarIngresso {
