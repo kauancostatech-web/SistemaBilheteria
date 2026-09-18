@@ -40,3 +40,14 @@ classDiagram
     }
     ConsultarIngresso --> Vetor : usa
     Vetor --> Ingresso : gerencia array
+
+Capacidade Definida no Construtor (ex: 3 posições)
+Atributos: tamanho = 3
+
+Gaveta de Ingressos (Array):
++---------------------+---------------------+---------------------+
+| Ingresso 1 (101)    | Ingresso 2 (102)    | Ingresso 3 (103)    |
+| Status: ATIVO       | Status: ATIVO       | Status: ATIVO       |
++---------------------+---------------------+---------------------+
+         [0]                   [1]                   [2]          <-- Índices
+
