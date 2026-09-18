@@ -1,23 +1,23 @@
-# Sistema de Bilheteria em Java
+# 🎟️ Sistema de Bilheteria em Java
 
-Projeto individual desenvolvido para a disciplina de Estruturas de Dados. A ideia principal foi criar um sistema de controle de ingressos do zero, manipulando vetores manualmente e **sem utilizar a classe `ArrayList`**.
+🎯 **Destaque Técnico para Recrutadores e Gestores:** Projeto individual desenvolvido com foco em **Estruturas de Dados**, implementando a manipulação manual de vetores e controle rigoroso de capacidade do zero, **sem utilizar a classe `ArrayList`**. Isso demonstra forte domínio de lógica algorítmica, gerenciamento de memória e orientação a objetos.
 
-## O que o sistema faz?
-* **Cadastro e Controle:** Permite adicionar ingressos em um vetor com capacidade fixa.
-* **Validação de Entrada:** Verifica se o ingresso existe na catraca, autorizando e alterando o status para "UTILIZADO" caso esteja ativo, ou bloqueando se já foi usado ou cancelado.
-* **Cancelamento:** Permite cancelar bilhetes ativos e solicitar reembolso, garantindo que ingressos já utilizados ou já cancelados não possam ser cancelados novamente.
+## 📌 O que o sistema faz?
+* **📥 Cadastro e Controle:** Permite adicionar ingressos em um vetor gerenciado manualmente com capacidade fixa.
+* **🛡️ Validação de Entrada (Catraca):** Verifica a existência do bilhete, autoriza e altera o status dinamicamente (`ATIVO` ➔ `UTILIZADO`), ou bloqueia entradas duplicadas e canceladas com segurança.
+* **💸 Cancelamento com Regras de Negócio:** Processa solicitações de reembolso bloqueando tentativas inválidas (como tentar cancelar ingressos já utilizados ou já cancelados).
 
-## Fluxo e Processo Ilustrativo do Sistema
+## 🏗️ Fluxo e Processo Ilustrativo do Sistema
 
 ```text
   +===================================================+
-  |              ConsultarIngresso (Main)             |
+  |              ConsultarIngresso (Main)             | <--- 🎮 Interface / Interação via Console (Scanner)
   +===================================================+
                             |
-         1. Inicia o sistema e instancia o Vetor
+         1. Inicia o sistema e gerencia o fluxo
                             v
   +===================================================+
-  |                     Vetor.java                    |
+  |                     Vetor.java                    | <--- ⚙️ Core de Estruturas de Dados (Manipulação Manual)
   |   (Gerencia a memória e array de forma manual)    |
   +===================================================+
         |                     |                  |
@@ -28,6 +28,8 @@ Projeto individual desenvolvido para a disciplina de Estruturas de Dados. A idei
                               |
                               v
   +===================================================+
-  |                   Ingresso.java                   |
+  |                   Ingresso.java                   | <--- 📦 Camada de Domínio / Entidade (Encapsulamento)
   |    (Objeto/Entidade que guarda dados e status)    |
   +===================================================+
+
+
